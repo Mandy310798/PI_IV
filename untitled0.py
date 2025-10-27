@@ -8,7 +8,7 @@ Original file is located at
 """
 
 ID_Item,Categoria,Marca,Tamanho,Data_Entrada,Data_Venda,Custo_Aquisicao,Preco_Venda,Status
-IT001,Calça Jeans,Levi's,40,2025-08-01,2025-08-15,30.00,120.00,Vendido
+IT001,Calça Jeans,Levi's,40,2025-08-01,2025 -08-15,30.00,120.00,Vendido
 IT002,Vestido de Festa,Zara,M,2025-08-01,,40.00,150.00,Disponível
 IT003,Camiseta de Banda,H&M,G,2025-08-02,2025-08-10,15.00,60.00,Vendido
 IT004,Bolsa de Couro,Arezzo,UN,2025-08-03,,50.00,200.00,Disponível
