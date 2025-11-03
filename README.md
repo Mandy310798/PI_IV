@@ -11,6 +11,7 @@ Aplicação web desenvolvida como parte do Projeto Integrador IV dos cursos do E
 | **HTML** | Linguagem de Marcação | Usado para estruturar o conteúdo das páginas web (*frontend*), localizadas na pasta `templates`. |
 | **Jinja2** | Motor de Templates | Usado pelo Flask para renderizar dinamicamente o HTML, injetando dados do back-end nas páginas. |
 | **Git** | Sistema de Controle de Versão | Utilizado para gerenciar e rastrear alterações no código-fonte. |
+| **Streamlit** | Framework Python para Data Apps | **SOLUÇÃO FINAL PROTOTIPADA**: Utilizado para criar o Painel de Controle interativo de maneira rápida e eficiente (arquivos na pasta `Streamlite`). |
 
 ---
 
@@ -92,3 +93,23 @@ A aplicação estará rodando no seu navegador através do endereço:
 [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 Para interromper o servidor, pressione `Ctrl + C` no terminal.
+
+### 6. Executar o Protótipo Final (Streamlit)
+
+Para rodar o resultado do projeto focado em visualização de dados, navegue até a pasta e execute o Streamlit:
+
+1.  **Acesse a pasta do protótipo:**
+    ```bash
+    # cd Streamlite
+
+2.  **Execute o Streamlit**
+    ```bash
+    # py -m streamlit run app.py
+
+3. **Acessar o Painel de Controle**
+
+O Streamlit iniciará um servidor local e abrirá o Painel de Controle no seu navegador, geralmente no endereço:
+
+http://localhost:8501
+
+Para interromper o servidor, pressione Ctrl + C no terminal.
