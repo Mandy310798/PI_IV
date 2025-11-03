@@ -31,7 +31,8 @@ Abra o seu terminal ou prompt de comando e execute o seguinte comando para baixa
 
 ```bash
 git clone [https://github.com/Mandy310798/PI_IV.git](https://github.com/Mandy310798/PI_IV.git)
-cd PI_IV ```
+cd PI_IV
+```
 
 ### 2. Configurar Ambiente Virtual (Recomendado)
 
@@ -64,6 +65,7 @@ pip install -r requirements.txt
 
 # Opção B: Se NÃO houver requirements.txt (instalação manual do Flask)
 # pip install Flask
+```
 
 ### 4. Executar a Aplicação
 
