@@ -6,10 +6,8 @@ import plotly.express as px
 import numpy as np
 import io
 
-# --- 1. Configuração do Flask ---
 app = Flask(__name__)
 
-# --- 2. Dados de Entrada (Seu CSV) ---
 csv_data = """ID_Item,Categoria,Marca,Tamanho,Data_Entrada,Data_Venda,Custo_Aquisicao,Preco_Venda,Status
 IT001,Caderno,Tilibra,A4,2025-08-01,2025-08-15,15.00,40.00,Vendido
 IT002,Quebra-Cabeca,Grow,1000 Pecas,2025-08-01,,45.00,120.00,Disponível
@@ -30,8 +28,6 @@ def carregar_e_preparar_dados(data):
 
 df = carregar_e_preparar_dados(csv_data)
 
-# --- 3. Funções de Análise e Geração de Gráficos Plotly ---
-
 def gerar_grafico_abc(df_input):
     """Realiza a Análise ABC e gera o gráfico Plotly."""
     df_vendidos = df_input[df_input['Status'] == 'Vendido'].copy()
@@ -44,7 +40,6 @@ def gerar_grafico_abc(df_input):
     df_abc['Participacao (%)'] = (df_abc['Faturamento'] / df_abc['Faturamento'].sum()) * 100
     df_abc['Acumulado (%)'] = df_abc['Participacao (%)'].cumsum()
 
-    # Cria a figura com dois eixos Y
     fig = make_subplots(specs=[[{"secondary_y": True}]])
 
     # Gráfico de Barras (Faturamento)
@@ -70,7 +65,7 @@ def gerar_grafico_abc(df_input):
         secondary_y=True,
     )
 
-    # Linha de 80% (Para classificação A)
+    # Linha de 80%
     fig.add_hline(y=80, line_dash="dot", annotation_text="80% (Classe A)", 
                   secondary_y=True, annotation_position="top left", line_color="grey")
 
@@ -138,9 +133,6 @@ def gerar_grafico_desempenho(df_input):
     fig.update_layout(height=500)
     
     return fig.to_json()
-
-
-# --- 4. Rota principal do Flask ---
 
 @app.route('/')
 def index():
