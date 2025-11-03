@@ -1,15 +1,13 @@
 # 🌐 PI_IV - Projeto Integrador IV
 
-Este repositório contém o código-fonte de uma aplicação web desenvolvida como parte do Projeto Integrador IV. O projeto é uma aplicação back-end simples, construída com **Python** e o *framework* **Flask**, utilizando **HTML** para a apresentação das páginas.
+Aplicação web desenvolvida como parte do Projeto Integrador IV dos cursos do Eixo de Computação. O projeto é uma aplicação back-end, construída com **Python** e o *framework* **Flask**, utilizando **HTML** para a apresentação das páginas que tem o objetivo de mostrar gráficos de desempenho de vendas de uma pequena loja varejista.
 
 ## 🛠️ Ferramentas e Tecnologias Utilizadas
-
-A seguir, estão listadas as principais ferramentas e tecnologias que compõem este projeto e como elas foram empregadas:
 
 | Ferramenta / Linguagem | Tipo | Uso no Projeto |
 | :--- | :--- | :--- |
 | **Python** | Linguagem de Programação | Linguagem principal para toda a lógica de back-end. |
-| **Flask** | Micro-Framework Web (Python) | Utilizado para criar o servidor web, definir rotas (URLs) e gerenciar as requisições HTTP (arquivos `app_flask.py`). |
+| **Flask** | Framework Web (Python) | Utilizado para criar o servidor web, definir rotas (URLs) e gerenciar as requisições HTTP (arquivos `app_flask.py`). |
 | **HTML** | Linguagem de Marcação | Usado para estruturar o conteúdo das páginas web (*frontend*), localizadas na pasta `templates`. |
 | **Jinja2** | Motor de Templates | Usado pelo Flask para renderizar dinamicamente o HTML, injetando dados do back-end nas páginas. |
 | **Git** | Sistema de Controle de Versão | Utilizado para gerenciar e rastrear alterações no código-fonte. |
@@ -33,7 +31,7 @@ Abra o seu terminal ou prompt de comando e execute o seguinte comando para baixa
 
 ```bash
 git clone [https://github.com/Mandy310798/PI_IV.git](https://github.com/Mandy310798/PI_IV.git)
-cd PI_IV
+cd PI_IV ```
 
 ### 2. Configurar Ambiente Virtual (Recomendado)
 
